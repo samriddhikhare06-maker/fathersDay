@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./end.css">
+</head>
+<body>
+    <h1>We Love you 🤍</h1>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.min.js"></script>
+    <script>
+        const body = document.body;
+        const fireWorks = new Fireworks.default(body, {
+            autoresize: true,
+            opacity: .5,
+            acceleration: 1.01,
+            friction: .95,
+            gravity: .5,
+            particles: 200,
+            tracelength: Infinity,
+            tracespeed: Infinity,
+            explosion: 5,
+            intensity: 60,
+            flickering: 80,
+            hue: { min: 0, max: 360 },
+            delay: { min: 30, max: 60 }
+        })
+        fireWorks.start();
+    </script>
+</body>
+</html>
